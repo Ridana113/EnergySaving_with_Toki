@@ -13,8 +13,8 @@ namespace snake
 {
     public partial class Form1 : Form
     {
-        private PictureBox[] snake = new PictureBox[400];
-        private int dirtX; 
+        private PictureBox[] snake = new PictureBox[300];
+        private int dirtX;
         private int dirtY;
         private int sizeOfSides = 20;
         private int rI;
@@ -25,7 +25,7 @@ namespace snake
         private int rZ;
         private int rP;
         private int rQ;
-        private int score =0;
+        private int score = 0;
         private Label labelScore;
         public Form1()
         {
@@ -50,7 +50,9 @@ namespace snake
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(OKP);
             timer.Tick += new EventHandler(Update);
             timer.Interval = 200;
-        }        
+
+
+        }
         private void OKP(object sender, KeyEventArgs e)
         {
             switch (e.KeyCode.ToString())
@@ -73,31 +75,54 @@ namespace snake
                     break;
             }
         }
-        private void Update (Object myObject, EventArgs eventArgs)
+        private void Update(Object myObject, EventArgs eventArgs)
         {
             MoveSnake();
             EatBird();
             Border();
             EatBird_2();
             EatBird_3();
+            int i = score;
             EatSkull();
+            if (i >= 200)
+            {
+                label3.Visible = true;
+                label4.Visible = true;
+                Yess.Visible = true;
+                No.Visible = true;
+                timer.Stop();
+                AddBird_2.Stop();
+                DeleteBird_2.Stop();
+                AddBird_3.Stop();
+                DeleteBird_3.Stop();
+                AddSkull.Stop();
+                label2.Visible = true;
+            }
         }
-            private void GenerateBird()
+        private void GenerateBird()
         {
             Random r = new Random();
-            rI = r.Next(0, 642 - sizeOfSides);
+            rI = r.Next(0, 632 - sizeOfSides);
             int tempI = rI % sizeOfSides;
             rI -= tempI;
             rJ = r.Next(0, 642 - sizeOfSides);
             int tempJ = rJ % sizeOfSides;
             rJ -= tempJ;
             bird.Location = new Point(rI, rJ);
-            this.Controls.Add(bird); 
+            this.Controls.Add(bird);
+            for (int _i = 1; _i < score; _i++)
+            {
+                if (snake[_i].Location.X == rI && snake[_i].Location.Y == rJ)
+                {
+                    this.Controls.Add(snake[_i]);
+                    GenerateBird();
+                }
+            }
         }
         private void GenerateBird_2()
         {
             Random r2 = new Random();
-            rI1 = r2.Next(0, 642 - sizeOfSides);
+            rI1 = r2.Next(0, 632 - sizeOfSides);
             int tempI1 = rI1 % sizeOfSides;
             rI1 -= tempI1;
             rJ1 = r2.Next(0, 642 - sizeOfSides);
@@ -105,11 +130,20 @@ namespace snake
             rJ1 -= tempJ1;
             bird_2.Location = new Point(rI1, rJ1);
             this.Controls.Add(bird_2);
+            for (int _i = 1; _i < score; _i++)
+            {
+                if (snake[_i].Location.X == rI1 && snake[_i].Location.Y == rJ1)
+                {
+                     this.Controls.Add(snake[_i]);
+                     GenerateBird_2();
+                }
+            }
         }
+    
         private void GenerateBird_3()
         {
             Random r3 = new Random();
-            rX = r3.Next(0, 642 - sizeOfSides);
+            rX = r3.Next(0, 632 - sizeOfSides);
             int tempX = rX % sizeOfSides;
             rX -= tempX;
             rZ = r3.Next(0, 642 - sizeOfSides);
@@ -117,7 +151,16 @@ namespace snake
             rZ -= tempZ;
             bird_3.Location = new Point(rX, rZ);
             this.Controls.Add(bird_3);
+            for (int _i = 1; _i < score; _i++)
+            {
+                if (snake[_i].Location.X == rX && snake[_i].Location.Y == rZ)
+                {
+                    this.Controls.Add(snake[_i]);
+                    GenerateBird_3();
+                }
+            }
         }
+
         private void GenerateSkull()
         {
             Random r4 = new Random();
@@ -129,8 +172,16 @@ namespace snake
             rQ -= tempQ;
             skull.Location = new Point(rP, rQ);
             this.Controls.Add(skull);
+            for (int _i = 1; _i < score; _i++)
+            {
+                if (snake[_i].Location.X == rP && snake[_i].Location.Y == rQ)
+                {
+                    this.Controls.Add(snake[_i]);
+                    GenerateSkull();
+                }
+            }
         }
-        private void EatBird()
+            private void EatBird()
         {
             if(snake[0].Location.X == rI && snake[0].Location.Y == rJ)
             {

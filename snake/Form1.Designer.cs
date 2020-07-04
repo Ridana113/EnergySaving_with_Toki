@@ -45,6 +45,8 @@
             this.AddSkull = new System.Windows.Forms.Timer(this.components);
             this.DeleteSkull = new System.Windows.Forms.Timer(this.components);
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.bird)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bird_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bird_3)).BeginInit();
@@ -58,7 +60,7 @@
             // bird
             // 
             this.bird.BackColor = System.Drawing.Color.Transparent;
-            this.bird.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bird.BackgroundImage")));
+            this.bird.Image = ((System.Drawing.Image)(resources.GetObject("bird.Image")));
             this.bird.Location = new System.Drawing.Point(643, 398);
             this.bird.Name = "bird";
             this.bird.Size = new System.Drawing.Size(30, 30);
@@ -69,7 +71,7 @@
             // 
             this.bird_2.BackColor = System.Drawing.Color.Transparent;
             this.bird_2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bird_2.BackgroundImage")));
-            this.bird_2.Location = new System.Drawing.Point(643, 362);
+            this.bird_2.Location = new System.Drawing.Point(633, 335);
             this.bird_2.Name = "bird_2";
             this.bird_2.Size = new System.Drawing.Size(30, 30);
             this.bird_2.TabIndex = 3;
@@ -83,7 +85,7 @@
             // bird_3
             // 
             this.bird_3.BackColor = System.Drawing.Color.Transparent;
-            this.bird_3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bird_3.BackgroundImage")));
+            this.bird_3.Image = ((System.Drawing.Image)(resources.GetObject("bird_3.Image")));
             this.bird_3.Location = new System.Drawing.Point(643, 536);
             this.bird_3.Name = "bird_3";
             this.bird_3.Size = new System.Drawing.Size(30, 30);
@@ -120,7 +122,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(206, 37);
+            this.label1.Location = new System.Drawing.Point(206, 55);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(202, 58);
             this.label1.TabIndex = 8;
@@ -164,7 +166,7 @@
             // 
             // DeleteSkull
             // 
-            this.DeleteSkull.Interval = 70000;
+            this.DeleteSkull.Interval = 67000;
             this.DeleteSkull.Tick += new System.EventHandler(this.DeleteSkull_Tick);
             // 
             // label2
@@ -173,27 +175,56 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(186, 95);
+            this.label2.Location = new System.Drawing.Point(186, 113);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(237, 30);
             this.label2.TabIndex = 11;
             this.label2.Text = " Начать игру заново?";
             this.label2.Visible = false;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Bahnschrift Condensed", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label3.Location = new System.Drawing.Point(221, 25);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(161, 58);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "VICTORY ";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label3.Visible = false;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label4.Location = new System.Drawing.Point(153, 83);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(302, 30);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "Поздравляю! Вы победили!";
+            this.label4.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(625, 621);
+            this.ClientSize = new System.Drawing.Size(624, 621);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.skull);
+            this.Controls.Add(this.bird);
+            this.Controls.Add(this.bird_2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.No);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Yess);
-            this.Controls.Add(this.skull);
             this.Controls.Add(this.bird_3);
-            this.Controls.Add(this.bird_2);
-            this.Controls.Add(this.bird);
             this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.Location = new System.Drawing.Point(110, 110);
             this.Name = "Form1";
@@ -224,6 +255,8 @@
         private System.Windows.Forms.Timer AddSkull;
         private System.Windows.Forms.Timer DeleteSkull;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }
 
