@@ -84,7 +84,7 @@ namespace snake
             EatBird_3();
             int i = score;
             EatSkull();
-            if (i >= 200)
+            if (i >= 150)
             {
                 label3.Visible = true;
                 label4.Visible = true;

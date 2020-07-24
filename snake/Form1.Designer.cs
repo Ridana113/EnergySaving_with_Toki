@@ -156,7 +156,7 @@
             // 
             // DeleteBird_3
             // 
-            this.DeleteBird_3.Interval = 50000;
+            this.DeleteBird_3.Interval = 45000;
             this.DeleteBird_3.Tick += new System.EventHandler(this.DeleteBird_3_Tick);
             // 
             // AddSkull
@@ -166,7 +166,7 @@
             // 
             // DeleteSkull
             // 
-            this.DeleteSkull.Interval = 67000;
+            this.DeleteSkull.Interval = 66000;
             this.DeleteSkull.Tick += new System.EventHandler(this.DeleteSkull_Tick);
             // 
             // label2
