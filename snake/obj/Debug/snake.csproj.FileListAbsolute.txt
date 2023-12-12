@@ -1,0 +1,52 @@
+C:\Users\Darina\source\repos\snake\snake\bin\Debug\snake.exe.config
+C:\Users\Darina\source\repos\snake\snake\bin\Debug\snake.exe
+C:\Users\Darina\source\repos\snake\snake\bin\Debug\snake.pdb
+C:\Users\Darina\source\repos\snake\snake\bin\Debug\DryIoc.dll
+C:\Users\Darina\source\repos\snake\snake\bin\Debug\DryIoc.xml
+C:\Users\Darina\source\repos\snake\snake\obj\Debug\snake.csprojAssemblyReference.cache
+C:\Users\Darina\source\repos\snake\snake\obj\Debug\snake.Form1.resources
+C:\Users\Darina\source\repos\snake\snake\obj\Debug\snake.Form2.resources
+C:\Users\Darina\source\repos\snake\snake\obj\Debug\snake.Form3.resources
+C:\Users\Darina\source\repos\snake\snake\obj\Debug\snake.Form4.resources
+C:\Users\Darina\source\repos\snake\snake\obj\Debug\snake.Properties.Resources.resources
+C:\Users\Darina\source\repos\snake\snake\obj\Debug\snake.csproj.GenerateResource.cache
+C:\Users\Darina\source\repos\snake\snake\obj\Debug\snake.csproj.CoreCompileInputs.cache
+C:\Users\Darina\source\repos\snake\snake\obj\Debug\snake.csproj.CopyComplete
+C:\Users\Darina\source\repos\snake\snake\obj\Debug\snake.exe
+C:\Users\Darina\source\repos\snake\snake\obj\Debug\snake.pdb
+D:\Snake\snake\bin\Debug\snake.exe.config
+D:\Snake\snake\bin\Debug\snake.exe
+D:\Snake\snake\bin\Debug\snake.pdb
+D:\Snake\snake\bin\Debug\DryIoc.dll
+D:\Snake\snake\bin\Debug\DryIoc.xml
+D:\Snake\snake\obj\Debug\snake.csproj.AssemblyReference.cache
+D:\Snake\snake\obj\Debug\snake.Form1.resources
+D:\Snake\snake\obj\Debug\snake.Form2.resources
+D:\Snake\snake\obj\Debug\snake.Form3.resources
+D:\Snake\snake\obj\Debug\snake.Form4.resources
+D:\Snake\snake\obj\Debug\snake.Properties.Resources.resources
+D:\Snake\snake\obj\Debug\snake.csproj.GenerateResource.cache
+D:\Snake\snake\obj\Debug\snake.csproj.CoreCompileInputs.cache
+D:\Snake\snake\obj\Debug\snake.csproj.CopyComplete
+D:\Snake\snake\obj\Debug\snake.exe
+D:\Snake\snake\obj\Debug\snake.pdb
+D:\Snake 2.0\snake\bin\Debug\snake.exe.config
+D:\Snake 2.0\snake\bin\Debug\snake.exe
+D:\Snake 2.0\snake\bin\Debug\snake.pdb
+D:\Snake 2.0\snake\bin\Debug\DryIoc.dll
+D:\Snake 2.0\snake\bin\Debug\DryIoc.xml
+D:\Snake 2.0\snake\obj\Debug\snake.csproj.AssemblyReference.cache
+D:\Snake 2.0\snake\obj\Debug\snake.Form1.resources
+D:\Snake 2.0\snake\obj\Debug\snake.Form2.resources
+D:\Snake 2.0\snake\obj\Debug\snake.Form3.resources
+D:\Snake 2.0\snake\obj\Debug\snake.Form4.resources
+D:\Snake 2.0\snake\obj\Debug\snake.Properties.Resources.resources
+D:\Snake 2.0\snake\obj\Debug\snake.csproj.GenerateResource.cache
+D:\Snake 2.0\snake\obj\Debug\snake.csproj.CoreCompileInputs.cache
+D:\Snake 2.0\snake\obj\Debug\snake.csproj.CopyComplete
+D:\Snake 2.0\snake\obj\Debug\snake.exe
+D:\Snake 2.0\snake\obj\Debug\snake.pdb
+D:\Snake 2.0\snake\obj\Debug\snake.fact.resources
+D:\Snake 2.0\snake\obj\Debug\snake.History.resources
+D:\Snake 2.0\snake\bin\Debug\Microsoft.DirectX.AudioVideoPlayback.dll
+D:\Snake 2.0\snake\obj\Debug\snake.About_Toki.resources
